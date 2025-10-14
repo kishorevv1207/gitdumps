@@ -14,10 +14,13 @@
 * `git init`
 * `git add .` 
 * `git commit -m 'commit message'` 
-* `git push orgin main` 
+* `git push orgin [branch name]` 
 * `git remote add origin [repo url]`
-* `git branch -M main`
-
+* `git branch -M main`  --> Remane Branch
+* `git branch [new branch name]`
+* `git checkout [target branch name]`
+* `git merge [from branch]`
+* `git pull orgin [source destination] main`
 
 
 
@@ -164,5 +167,19 @@ Git pull used to pull chenages made in repo
 * `git push origin main`
 
 -------------------------------------------------------------------------
+
+
+#### <u> Data changes in branches to main
+
+* Switch work branch
+* `git checkout [destination brach]`
+* pull recent code from main `git pull origin main`
+* usuall :
+      change, stage, commit, push
+* now merege from work branch to main
+  *  `git checkout main`
+  * `git merge [work branch]`
+  * `git push origin main`
+
 
 
