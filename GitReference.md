@@ -1,5 +1,9 @@
 # <u>Git Hub Reference</u>
 
+#### Advantages CLI 
+
+* You can stage, commit, amend, stash, rebase, cherry-pick, and squash — things the web GUI doesn’t support.
+
 ##### <u> Commands to Remember </u>
 
 * `git clone [repo origin url] `
@@ -12,7 +16,7 @@
 * `git commit -m 'commit message'` 
 * `git push orgin main` 
 * `git remote add origin [repo url]`
-*  `git branch -M main`
+* `git branch -M main`
 
 
 
