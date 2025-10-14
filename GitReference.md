@@ -1,26 +1,46 @@
- # <u> This file created in local and pushed to git </u>
+# <u>Git Hub Reference</u>
+
+##### <u> Commands to Remember </u>
+
+* `git clone [repo origin url] `
+* `git status`
+* `git pull`
+* `git branch` and `git branch -a`
+* `dir -Force`
+* `git init`
+* `git add .` 
+* `git commit -m 'commit message'` 
+* `git push orgin main` 
+* `git remote add origin [repo url]`
+*  `git branch -M main`
+
+
+
+
+#### <u>Clone Repo</u>
+
+* Create or open a folder in IDE 
+* copy repo url from git hub repo
+* used command `git clone [repo origin url]`
+
+ #### <u> This file created in local and pushed to git </u>
 
 Create a file in local
 
 * GitReference Files is created
-
 * File name U means unmodified 
 
 --------------------------------------------------
 
-
+<u>Git Status</u>
 
 `PS D:\Dev\Python\gitdumps> git status`
 
-Untracked files:
-
-  (use "git add <file>..." to include in what will be committed)
-    GitReference.md
 
 
-nothing added to commit but untracked files present (use "git add" to track)
+* nothing added to commit but untracked files present (use "git add" to track)
 
-PS D:\Dev\Python\gitdumps>
+
 
 
 
@@ -41,15 +61,7 @@ ___________________________________________________
 
 PS D:\Dev\Python\gitdumps> `git status`
 
-On branch main
 
-Your branch is up to date with 'origin/main'.
-
-Changes to be committed:
-
-  (use "git restore --staged <file>..." to unstage)
-
-        new file:   GitReference.md
 
 
 * File waits in Staging Area
@@ -63,11 +75,6 @@ Changes to be committed:
 
 PS D:\Dev\Python\gitdumps> `git commit -m 'New file added in git named GitReference.md'`
 
-[main 39bcfb0] New file added in git named GitReference.md
-
- 1 file changed, 0 insertions(+), 0 deletions(-)
-
- create mode 100644 GitReference.md
 
 
 
@@ -80,51 +87,12 @@ PS D:\Dev\Python\gitdumps> `git commit -m 'New file added in git named GitRefere
 
 Here we can push file to specfic branch 
 
-`PS D:\Dev\Python\gitdumps> git push origin main`
-
-Enumerating objects: 4, done.
-
-Counting objects: 100% (4/4), done.
-
-Delta compression using up to 12 threads
-
-Compressing objects: 100% (2/2), done.
-
-Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.
-
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-
-To https://github.com/kishorevv1207/gitdumps.git
-
-   ba59fa6..bc073a3  main -> main
+PS D:\Dev\Python\gitdumps> `git push origin main `
 
 
 * Now local file added to github page it could be visbile 
 
-
-------------------------------------------------------------------------
-
-
-PS D:\Dev\Python\gitdumps> git status
-
-On branch main
-
-Your branch is up to date with 'origin/main'.
-
-Changes not staged for commit:
-
-  (use "git add <file>..." to update what will be committed)
-
-  (use "git restore <file>..." to discard changes in working directory)
-
-        modified:   GitReference.md
-
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-
-
--------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
 
 <u>Qucik Review</u>
@@ -142,7 +110,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 #### <u>Working on Existing Cloned Repo </u>
 
-Working on Existing file alredy Cloned repo steps to  flowwed to push the file after changes done
+Working on Existing file alredy Cloned repo steps followed push the file after changes done
 
 * Add   `git add [File Name]` ---->  `git add GitReference.md` 
 * Commit  `git commit -m 'New file added in git named GitReference.md'`
@@ -167,6 +135,30 @@ Same if the file deleted locally and need change same in git same steps followed
 
 ------------------------------------------------------------------------------------
 
+#### <u> Git Pull </u>
 
+Git pull used to pull chenages made in repo
+
+`git pull`
+
+----------------------------------------------------------------------
+
+#### <u>Create a new Repo from IDE `git init` </u>
+
+
+* Create a folder
+* change dir
+* command `git init`
+* create a multiple files
+* `git add .`  -----------> this command moves all Untracked File to staging
+*  `git commit -m 'commit message'` 
+* ERROR : `git push orgin main` There is no main or origin branch in new repo
+* create a Repo in git:
+      `git remote add origin [repo url]`
+* `git branch`  -----> display branch name
+* RENAME BRANCH -----> `git branch -M main`
+* `git push origin main`
+
+-------------------------------------------------------------------------
 
 
