@@ -178,7 +178,7 @@ Git pull used to pull chenages made in repo
 * usuall :
       change, stage, commit, push
 * now merege from work branch to main
-  *  `git checkout main`
+  * `git checkout main`
   * `git merge [work branch]`
   * `git push origin main`
 
