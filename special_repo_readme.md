@@ -1,6 +1,5 @@
 
 
-<div align="right"> <h1> K!shore v²</h1>  </div>
 <!--
 <pre>
 Details = [
