@@ -1,1 +1,141 @@
-hi kishore
+Great question — this is one of the most important “gotchas” in Python. Let’s walk through it slowly and clearly.
+
+
+---
+
+🔍 The Code
+
+def add_item(item, lst=[]):
+    lst.append(item)
+    return lst
+
+⚠️ Key Rule
+
+👉 Default arguments are evaluated only ONCE, at function definition time, not each time the function is called.
+
+So lst=[] is created one time, and the same list is reused across calls unless you pass your own list.
+
+
+---
+
+🧠 Step-by-Step Execution
+
+✅ First call
+
+print(add_item(1))
+
+lst refers to the default list → []
+
+Append 1
+
+List becomes: [1]
+
+
+Output:
+
+[1]
+
+
+---
+
+✅ Second call
+
+print(add_item(2))
+
+lst is the same default list (not a new one!)
+
+Append 2
+
+List becomes: [1, 2]
+
+
+Output:
+
+[1, 2]
+
+
+---
+
+✅ Third call (important difference)
+
+print(add_item(3, []))
+
+You explicitly pass a new empty list
+
+Append 3
+
+This list is temporary and not reused
+
+
+Output:
+
+[3]
+
+
+---
+
+✅ Fourth call
+
+print(add_item(4))
+
+Back to the original default list
+
+It was [1, 2]
+
+Append 4
+
+
+Output:
+
+[1, 2, 4]
+
+
+---
+
+📌 Final Output
+
+[1]
+[1, 2]
+[3]
+[1, 2, 4]
+
+
+---
+
+🧪 Visual Mental Model
+
+DEFAULT LIST (shared):
+[] → [1] → [1, 2] → [1, 2, 4]
+
+TEMP LIST (one-time):
+[] → [3]
+
+
+---
+
+✅ Correct / Safe Way to Write This
+
+def add_item(item, lst=None):
+    if lst is None:
+        lst = []
+    lst.append(item)
+    return lst
+
+Now each call gets a fresh list unless you explicitly pass one.
+
+
+---
+
+💡 Why Python Does This
+
+Default values are stored in function memory for performance
+
+Mutable objects (like lists, dicts) keep their state
+
+
+
+---
+
+If you want: 🔥 a memory diagram 🔥 an interview explanation 🔥 a similar trap with dicts or classes
+
+Just tell me 😄
