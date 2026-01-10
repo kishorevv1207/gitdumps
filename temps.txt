@@ -124,18 +124,3 @@ def add_item(item, lst=None):
 Now each call gets a fresh list unless you explicitly pass one.
 
 
----
-
-💡 Why Python Does This
-
-Default values are stored in function memory for performance
-
-Mutable objects (like lists, dicts) keep their state
-
-
-
----
-
-If you want: 🔥 a memory diagram 🔥 an interview explanation 🔥 a similar trap with dicts or classes
-
-Just tell me 😄
