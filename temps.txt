@@ -16,7 +16,6 @@ def add_item(item, lst=[]):
 So lst=[] is created one time, and the same list is reused across calls unless you pass your own list.
 
 
----
 
 🧠 Step-by-Step Execution
 
@@ -123,7 +122,5 @@ def add_item(item, lst=None):
 
 Now each call gets a fresh list unless you explicitly pass one.
 
-
-
-
+---
 
